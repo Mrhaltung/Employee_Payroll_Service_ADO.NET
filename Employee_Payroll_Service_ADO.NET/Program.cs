@@ -29,9 +29,13 @@ namespace Employee_Payroll_Service_ADO.NET
             employee.EmployeeSalary = 40000;
             employee.SalaryId = 2409;
 
-            repo.AddEmployee(employee);
+            //repo.AddEmployee(employee);
 
             Console.WriteLine("\n Data is Stored in DataBase.");
+
+            repo.GetEmployeeDetails();
+
+            Console.WriteLine("Your Data is Executed");
         }
     }
 }
