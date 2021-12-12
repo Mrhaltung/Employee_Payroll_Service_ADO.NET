@@ -31,11 +31,20 @@ namespace Employee_Payroll_Service_ADO.NET
 
             //repo.AddEmployee(employee);
 
-            Console.WriteLine("\n Data is Stored in DataBase.");
+            //Console.WriteLine("\n Data is Stored in DataBase.");
 
-            repo.GetEmployeeDetails();
+            //repo.GetEmployeeDetails();
 
-            Console.WriteLine("Your Data is Executed");
+            //Console.WriteLine("Your Data is Executed");
+
+            Salary salary = new Salary();
+            
+            employee.EmployeeSalary = 50000;
+            employee.SalaryId = 9024;
+            employee.EmployeeId = 9;
+            employee.Month = "Jan";
+
+            salary.UpdateEmployeeSalary(employee);
         }
     }
 }
