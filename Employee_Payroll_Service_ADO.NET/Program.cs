@@ -39,12 +39,14 @@ namespace Employee_Payroll_Service_ADO.NET
 
             Salary salary = new Salary();
             
-            employee.EmployeeSalary = 50000;
-            employee.SalaryId = 9024;
-            employee.EmployeeId = 9;
-            employee.Month = "Jan";
+            employee.EmployeeSalary = 12340;
+            employee.SalaryId = 2409;
+            employee.EmployeeId = 0;
+            employee.Month = "Sept";
 
             salary.UpdateEmployeeSalary(employee);
+
+            salary.GetEmployeeDetails();
         }
     }
 }
